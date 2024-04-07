@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 
-import Navigation from '../components/Navigation.astro';
+import Header from '../components/Header.astro';
 
 import Footer from '../components/Footer.astro';
 
@@ -45,7 +45,7 @@ const textCase = "uppercase"; //Mayuscula
   </head>
 	<body>
 		<body>
-            <Navigation />
+            <Header />
             <h1>{pageTitle}</h1>
             <h2>... ¡y mi nuevo sitio Astro!</h2>
             <p>Estoy trabajando en el tutorial introductorio de Astro. Esta es la segunda página de mi sitio web, ¡y es la primera que he construido yo mismo!</p>
@@ -68,6 +68,9 @@ const textCase = "uppercase"; //Mayuscula
 
             {goal === 3 ? <p>Mi objetivo es terminar en 3 días.</p> : <p>Mi objetivo no son 3 días.</p>}
             <Footer />
+            <script>
+                import "../scripts/menu.js";
+            </script>
           </body>
 	</body>
 </html>
